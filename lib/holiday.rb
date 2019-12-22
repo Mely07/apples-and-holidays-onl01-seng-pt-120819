@@ -74,8 +74,8 @@ def all_supplies_in_holidays(holiday_hash)
       end #end if
       supplies.each do |supply|
         print supply + ", "
-        puts ""
       end
+      puts ""
     end #end holiday each
   end
 end
