@@ -62,9 +62,9 @@ def all_supplies_in_holidays(holiday_hash)
           word.capitalize
         end
         joined_holiday = split_holiday.join(" ")
-        print "   " + joined_holiday + ": " 
+        print "  " + joined_holiday + ": " 
       else 
-        print "   " + feast.capitalize + ": "
+        print "  " + feast.capitalize + ": "
       end #end if
       print supplies.join(", ")
 
