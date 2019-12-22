@@ -49,13 +49,6 @@ end
 
 
 def all_supplies_in_holidays(holiday_hash)
-  # iterate through holiday_hash and print items such that your readout resembles:
-  # Winter:
-  #   Christmas: Lights, Wreath
-  #   New Years: Party Hats
-  # Summer:
-  #   Fourth Of July: Fireworks, BBQ
-  # etc.
   holiday_hash.each do |season, holiday|
     season = season.to_s
     season.capitalize!
@@ -72,8 +65,7 @@ def all_supplies_in_holidays(holiday_hash)
       else 
         print "   " + feast.capitalize + ": "
       end #end if
-print supplies.join(", ")
-
+      print supplies.join(", ")
       puts ""
     end #end holiday each
   end
