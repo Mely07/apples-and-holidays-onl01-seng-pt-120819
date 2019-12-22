@@ -73,7 +73,7 @@ def all_supplies_in_holidays(holiday_hash)
         print "   " + feast.capitalize + ": "
       end #end if
       supplies.each do |supply|
-        print supply + ", "
+        print supply.join(",")
       end
       puts ""
     end #end holiday each
