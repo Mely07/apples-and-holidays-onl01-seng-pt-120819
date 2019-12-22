@@ -48,10 +48,12 @@ def all_winter_holiday_supplies(holiday_hash)
 end
 
 def all_supplies_in_holidays(holiday_hash)
+  
   holiday_hash.each do |season, holiday|
+    result = ""
     season = season.to_s
     season.capitalize!
-    print "#{season}:\n"
+    result << "#{season}:\n"
     holiday.each do |feast, supplies|
       feast = feast.to_s
       if feast.include?("_")
@@ -60,14 +62,15 @@ def all_supplies_in_holidays(holiday_hash)
           word.capitalize
         end
         joined_holiday = split_holiday.join(" ")
-        print "  " + joined_holiday + ": " 
+        result << "  " + joined_holiday + ": " 
       else 
-        print "  " + feast.capitalize + ": "
+        result << "  " + feast.capitalize + ": "
       end #end if
-      print supplies.join(", ") + "\n"
+      result << supplies.join(", ") + "\n"
 
     end #end holiday each
   end
+  puts result
 end
 
 all_supplies_in_holidays(holiday_hash)
