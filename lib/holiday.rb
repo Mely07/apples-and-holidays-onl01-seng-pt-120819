@@ -70,7 +70,7 @@ def all_supplies_in_holidays(holiday_hash)
         joined_holiday = split_holiday.join(" ")
         puts "   " + joined_holiday + ":" 
         supplies.each do |supply|
-          print supply
+          print supply + ","
         end
       end
     end
