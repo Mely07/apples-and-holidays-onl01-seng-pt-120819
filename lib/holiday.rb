@@ -66,7 +66,7 @@ def all_supplies_in_holidays(holiday_hash)
       else 
         print "  " + feast.capitalize + ": "
       end #end if
-      print supplies.join(", ")
+      print supplies.join(", ") + "\n"
 
     end #end holiday each
   end
