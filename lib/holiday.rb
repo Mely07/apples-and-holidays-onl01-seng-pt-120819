@@ -65,7 +65,7 @@ def all_supplies_in_holidays(holiday_hash)
       feast = feast.to_s
       if feast.include?("_")
         split_holiday = feast.split("_")
-        joined_holiday = split_holiday.capitalize.join(" ")
+        joined_holiday = split_holiday.join(" ").capitalize
         puts joined_holiday
         
       end
