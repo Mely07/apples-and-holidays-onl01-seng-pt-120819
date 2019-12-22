@@ -68,7 +68,7 @@ def all_supplies_in_holidays(holiday_hash)
           puts word.capitalize
         joined_holiday = split_holiday.join(" ").capitalize
         puts "   " + joined_holiday
-        
+      
       end
     end
   end
