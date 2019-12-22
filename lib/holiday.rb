@@ -67,7 +67,7 @@ def all_supplies_in_holidays(holiday_hash)
         split_holiday.map do |word|
           word.capitalize
         end
-        joined_holiday = split_holiday.join(" ").capitalize
+        joined_holiday = split_holiday.join(" ")
         puts "   " + joined_holiday
       
       end
