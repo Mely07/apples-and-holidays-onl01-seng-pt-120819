@@ -61,6 +61,7 @@ def all_supplies_in_holidays(holiday_hash)
     season.capitalize!
     puts "#{season}:"
     holiday.each do |feast, supplies|
+      puts "   #{feast.capitalize}"
       feast = feast.to_s
       if feast.include?("_")
         split_holiday = feast.split("_")
